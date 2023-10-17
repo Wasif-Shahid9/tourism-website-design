@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/logo/title-icon.png">
+    <!-- !!!!!!!!==========!!!!!!!!
+        Custom CSS
+    !!!!!!!!==========!!!!!!!!! -->
+    <link rel="stylesheet" href="style.css">
+    <!-- !!!!!!!!==========!!!!!!!!
+        Bootstrap CSS
+    !!!!!!!!==========!!!!!!!!! -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- !!!!!!!!==========!!!!!!!!
+        FontAwesome
+    !!!!!!!!==========!!!!!!!!! -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <!-- Kursor Link -->
+    <link rel="stylesheet" href="Kursor-master/dist/kursor.css">
+    <title>E-Project</title>
+</head>
+
+<body>
+    <!-- !!!!!!!!==========!!!!!!!!
+        Navbar
+    !!!!!!!!==========!!!!!!!!! -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white w-100 position-sticky">
+        <div class="container">
+            <a class="navbar-brand pt-0 d-lg-none" href="#"><img src="./images/logo/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" href="#offcanvasExample">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="service.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item logo d-none d-md-none d-lg-block fw-bold">
+                        <a class="nav-link fs-3" href="index.html"><img src="./images/logo/logo.png"></a>
+                    </li>
+                    <li class="nav-item drop">
+                        <a class="nav-link nav-active" href="destination.html">Destination</a>
+                        <ul class="drop-menu">
+                            <li><a href="hazards.html">Hazards</a></li>
+                            <li><a href="sheltering.html">Sheltering</a></li>
+                            <li><a href="techniques.html">Techniques</a></li>
+                            <li><a href="history.html">History</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item drop">
+                        <a class="nav-link" href="shop.html">Pages</a>
+                        <ul class="drop-menu">
+                            <li><a href="shop.html">Shop</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Offcanvas -->
+        <div class="offcanvas offcanvas-start" id="offcanvasExample">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel"><a class="navbar-brand pt-0" href="#"><img src="./images/logo/logo.png"></a></h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="dropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item p-2">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link" href="service.html">Services</a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item logo d-none d-md-none d-lg-block fw-bold">
+                            <a class="nav-link fs-3" href="index.html"><img src="./images/logo/logo.png"></a>
+                        </li>
+                        <li class="nav-item drop p-2">
+                            <a class="nav-link dropdown-toggle nav-active" id="dropdownMenuButton"
+                            data-bs-toggle="dropdown" href="destination.html">Destination</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="hazards.html">Hazards</a></li>
+                                <li><a class="dropdown-item" href="sheltering.html">Sheltering</a></li>
+                                <li><a class="dropdown-item" href="techniques.html">Techniques</a></li>
+                                <li><a class="dropdown-item" href="history.html">History</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link" href="shop.html">Pages</a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- !!!!!!!!==========!!!!!!!!
+        Techniques-Header
+    !!!!!!!!==========!!!!!!!!! -->
+    <section class="contact-head">
+        <div class="contact-img technique-img d-flex justify-content-center align-items-center">
+            <h1>Skills & Techniques</h1>
+        </div>
+    </section>
+
+    <!-- !!!!!!!!==========!!!!!!!!
+        Techniques Section
+    !!!!!!!!==========!!!!!!!!! -->
+    <section id="technique" class="py-5 px-5">
+        <div class="container p-5">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-12 d-flex flex-wrap justify-content-center align-items-center">
+                    <h1>MOUNTAINEERING SKILLS & TECHNIQUES NEEDED</h1>
+                </div>
+                <div class="col-lg-6 col-md-12 col-12">
+                    <ol>
+                        <li>Mountaineering skills & techniques needed</li>
+                        <li>Types of knots for alpine climbing</li>
+                        <li>Belay Stations & Personal Anchors</li>
+                        <li>Climbing Call: Commands & Communication</li>
+                        <li>Anchors</li>
+                        <li>Rockfall and edges</li>
+                        <li>Rock Climbing</li>
+                        <li>Snow Climbing</li>
+                        <li>Roped Glacier Travel</li>
+                        <li>DISCLAIMER</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="detail-technique" class="py-5 mb-3">
+        <div class="container">
+            <h4>1. Mountaineering skills & techniques needed</h4>
+            <p class="tech-text">Warm summer rock, crisp winter snow. Time spent in the mountains is simply
+                incomparable. Climbing with friends and exploring wild places together creates strong bonds. To get the
+                most of these experiences, to keep it safe and reduce the risks as far as possible, you need good
+                physical endurance, mental strength and a solid understanding of mountaineering and alpine climbing
+                techniques. Ultimately, climbing is a dangerous sport and claims many casualties each year. <br> The
+                essential technical skills needed for mountaineering take some time to learn. The best way to quickly
+                and safely is to learn from a qualified guide. When you’re climbing, your safety and the safety of your
+                partner is your responsibility. No article or video can replace qualified instruction and experience.
+                <br> We’ve put together a summary of the main climbing techniques required for mountaineering.</p>
+            <h4>2. Types of knots for alpine climbing</h4>
+            <p>There are many knots that climbers use depending upon the situation. You actually only need to know a
+                relatively small number of knots to climb in safety. However, you do need to know them well, including
+                if you are tired or under time pressure (or even in the dark if you had to). Carelessness can lead to
+                fatal errors. <br> There are three different types: knots for tying in/ roping up, knots for joining
+                ropes (often called bends) and safety/ friction hitches (hitches are used to connect a rope or sling to
+                another object, such as a carabiner). <br> These is what we consider the main knots for alpine climbing:
+            </p>
+            <div class="row py-5 align-items-center">
+                <div class="col-lg-8 col-md-6 col-12">
+                    <h4>2.1 Basic Knots</h4>
+                    <ul>
+                        <li>Figure of Eight Knot Threaded -Tying in to a harness</li>
+                        <li>Figure of Eight Knot on a Bight - Clipping a rope into something</li>
+                        <li>Clove Hitch - Setting up belay points</li>
+                        <li>Overhand Knot - Joining abseil ropes</li>
+                        <li>Bowline -Tying in to a harness. Tying a rope off round a tree or similar</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 text-center">
+                    <img src="./images/5c-techniques/knot-1.jpg" class="img-fluid">
+                </div>
+            </div>
+            <div class="row align-items-center py-5">
+                <div class="col-lg-8 col-md-6 col-12">
+                    <h4>2.1 Advance Knots</h4>
+                    <ul>
+                        <li>Prusik Loop - For safe-guarding abseils and ascending fixed ropes</li>
+                        <li>Mule Knot - To tie-off a belay</li>
+                        <li>Girth Hitch - For connecting slings</li>
+                        <li>Tape Knot -To join tape abseil slings</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 text-center">
+                    <img src="./images/5c-techniques/knot-2.png" class="img-fluid">
+                </div>
+            </div>
+            <h4>3. Belay Stations & Personal Anchors</h4>
+            <p>The belay station is your central anchor point and needs to be strong enough to hold a fall.
+
+                There are three types: natural anchors, such as a good-sized, large (live) tree or a solid rock spike or thread; fixed anchors – pitons, bolts and rings that are left permanently in place; removable anchors – that you build and remove yourself. <br> The anchor you build will depend on the circumstances and available options, such as the number and quality of anchors, pull direction and your chosen belay method. Either way, every anchor system has a central point where you clip in your personal anchor and set up the belay. Locking carabiners should always be used for belay anchor connections. It’s important to be able to build anchors safely, quickly and effectively. <br> To protect the belay anchor – and minimize the chances of high factor fall – the leader should place a good first piece of protection early on in the pitch, sometimes referred to by American Climbers as the ‘Jesus Nut’.</p>
+            <h4>4. Climbing Call: Commands & Communication</h4>
+            <p>Climbing calls are important so that everyone knows exactly what is happening. They might sometimes seem a bit excessive – especially at the climbing gym – but they help to prevent misunderstandings. In the mountains, once a lead climber is out of sight, they can become essential. Bear in mind that climbing calls might differ slightly in other countries. Before you climb, make sure that you and your partner have agreed on which calls you are using before you leave the ground. <br> These are the standard calls:</p>
+            <ul>
+                <li>On Belay –The belayer tells the climber they are ‘on belay’ and can 'climb when ready'</li>
+                <li>Climbing – The climber tells the belayer they are ‘climbing’</li>
+                <li>Slack – To tell the belayer to give out some slack</li>
+                <li>Take – To tell the belayer to take in all the slack and hold the rope tight</li>
+                <li>Watch Me! – To alert your belayer that you are making a difficult move in where you might fall
+                </li>
+            </ul>
+            <h4>Anchors</h4>
+            <p>Making sure your anchors are solid is obviously essential. Back up with a second anchor point wherever possible. Always carry tape or cord for constructing or extending anchors.</p>
+        </div>
+    </section>
+
+    <!-- !!!!!!!!==========!!!!!!!!
+        Footer
+    !!!!!!!!==========!!!!!!!!! -->
+    <footer class="bg-dark py-5" id="footer">
+        <div class="container">
+            <div class="row text-white g-4">
+                <div class="col-md-6 col-lg-4 py-3">
+                    <h5 class="text-uppercase text-decoration-none text-white py-2">About Us</h5>
+                    <p class="text-white text-muted py-4 px-1">Guys like us we had it made. Those were the days. The
+                        mate was a mighty sailin' man the skipper brave and sure. Five passengers.</p>
+                    <a href="#" class="text-decoration-none text-white">Read More</a>
+                </div>
+
+                <div class="col-md-6 col-lg-4 py-3 visit-hours">
+                    <h5 class="text-uppercase text-decoration-none text-white py-2">visiting hours</h5>
+                    <p class="py-4 text-muted">Monday to Friday : <span class="fw-lighter">(9:00 am - 5:30 pm)</span>
+                    </p>
+                    <p class="pb-4 text-muted">Saturday and Sunday : <span class="fw-lighter">(11:00 am - 2:30
+                            pm)</span></p>
+                    <div class="ftr-icons">
+                        <ul class="d-flex list-unstyled">
+                            <li class="me-3">
+                                <a href="#" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                            </li>
+                            <li class="me-3">
+                                <a href="#" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                            <li class="me-3">
+                                <a href="#" title="Linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                            </li>
+                            <li class="me-3">
+                                <a href="#" title="Tumblr"><i class="fa-brands fa-tumblr"></i></a>
+                            </li>
+                            <li class="me-3">
+                                <a href="#" title="Vimeo"><i class="fa-brands fa-vimeo"></i></a>
+                            </li>
+                            <li class="me-3">
+                                <a href="#" title="Pinterest"><i class="fa-brands fa-pinterest"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 py-3 tweets">
+                    <h5 class="text-uppercase text-decoration-none text-white py-2">Latest Tweets</h5>
+                    <div class="d-flex py-4">
+                        <a href="#" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                        <p class="text-white text-muted ps-4">Guys like us we had it made. Those were the days. The mate
+                            was a mighty sailin' man the skipper brave and sure. Five passengers.</p>
+                    </div>
+                    <a href="#" class="ps-5 text-white fw-bold">@umdesigner698</a>
+                </div>
+
+                <div class="col-12 py-4 pb-3">
+                    <h5 class="fw-bold mb-3">Recent Visiting</h5>
+                    <div class="ftr-recent-img">
+                        <img src="./images/footer/ftr-rcnt-1.jpg" class="img-fluid">
+                        <img src="./images/footer/ftr-rcnt-2.jpg" class="img-fluid">
+                        <img src="./images/footer/ftr-rcnt-3.jpg" class="img-fluid">
+                        <img src="./images/footer/ftr-rcnt-4.jpg" class="img-fluid">
+                        <img src="./images/footer/ftr-rcnt-5.jpg" class="img-fluid">
+                        <img src="./images/footer/ftr-rcnt-6.jpg" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ARR -->
+    <section class="arr bg-dark w-100 text-white">
+        <div class="container w-100 p-4">
+            <p class="mb-0 text-center text-muted">UMD &copy; 2022. All Rights Reserved</p>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- !!!!!!!!==========!!!!!!!!
+        Bootstrap JS
+    !!!!!!!!==========!!!!!!!!! -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- !!!!!!!!==========!!!!!!!!
+        Types JS
+    !!!!!!!!==========!!!!!!!!! -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- !!!!!!!!==========!!!!!!!!
+        Counter JS
+    !!!!!!!!==========!!!!!!!!! -->
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script> -->
+    <script src="./script files/countMe-2/countMe.min.js"></script>
+    <!-- !!!!!!!!==========!!!!!!!!
+        Custom JS
+    !!!!!!!!==========!!!!!!!!! -->
+    <script src="./script.js"></script>
+
+</body>
+
+</html>

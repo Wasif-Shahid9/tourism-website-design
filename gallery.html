@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/logo/title-icon.png">
+    <!-- !!!!!!!!==========!!!!!!!!
+        Custom CSS
+    !!!!!!!!==========!!!!!!!!! -->
+    <link rel="stylesheet" href="style.css">
+    <!-- !!!!!!!!==========!!!!!!!!
+        Bootstrap CSS
+    !!!!!!!!==========!!!!!!!!! -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- !!!!!!!!==========!!!!!!!!
+        FontAwesome
+    !!!!!!!!==========!!!!!!!!! -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <!-- Kursor Link -->
+    <link rel="stylesheet" href="Kursor-master/dist/kursor.css">
+    <title>E-Project</title>
+</head>
+
+<body>
+    <!-- !!!!!!!!==========!!!!!!!!
+        Navbar
+    !!!!!!!!==========!!!!!!!!! -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white w-100 position-sticky">
+        <div class="container">
+            <a class="navbar-brand pt-0 d-lg-none" href="#"><img src="./images/logo/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" href="#offcanvasExample">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="service.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-active" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item logo d-none d-md-none d-lg-block fw-bold">
+                        <a class="nav-link fs-3" href="index.html"><img src="./images/logo/logo.png"></a>
+                    </li>
+                    <li class="nav-item drop">
+                        <a class="nav-link" href="destination.html">Destination</a>
+                        <ul class="drop-menu">
+                            <li><a href="hazards.html">Hazards</a></li>
+                            <li><a href="sheltering.html">Sheltering</a></li>
+                            <li><a href="techniques.html">Techniques</a></li>
+                            <li><a href="history.html">History</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item drop">
+                        <a class="nav-link" href="shop.html">Pages</a>
+                        <ul class="drop-menu">
+                            <li><a href="shop.html">Shop</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Offcanvas -->
+        <div class="offcanvas offcanvas-start" id="offcanvasExample">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel"><a class="navbar-brand pt-0" href="#"><img src="./images/logo/logo.png"></a></h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="dropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item p-2">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link nav-active" href="service.html">Services</a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item logo d-none d-md-none d-lg-block fw-bold">
+                            <a class="nav-link fs-3" href="index.html"><img src="./images/logo/logo.png"></a>
+                        </li>
+                        <li class="nav-item drop p-2">
+                            <a class="nav-link dropdown-toggle" id="dropdownMenuButton"
+                            data-bs-toggle="dropdown" href="destination.html">Destination</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="hazards.html">Hazards</a></li>
+                                <li><a class="dropdown-item" href="sheltering.html">Sheltering</a></li>
+                                <li><a class="dropdown-item" href="techniques.html">Techniques</a></li>
+                                <li><a class="dropdown-item" href="history.html">History</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link" href="shop.html">Pages</a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- !!!!!!!!==========!!!!!!!!
+        Gallery-Header
+    !!!!!!!!==========!!!!!!!!! -->
+    <section class="contact-head">
+        <div class="contact-img gallery-img d-flex justify-content-center align-items-center">
+            <h1>Gallery</h1>
+        </div>
+    </section>
+
+    <!-- !!!!!!!!==========!!!!!!!!
+        Gallery-Header
+    !!!!!!!!==========!!!!!!!!! -->
+    <div class="main-heading w-100 d-flex justify-content-center align-items-center flex-column my-5">
+        <h2 class="mb-4">Fabolus Places</h2>
+        <img src="./images/icons/heading-img.png" class="mb-2">
+        <h6 class="fw-bold">OUR GALLERY</h6>
+    </div>
+    <main>
+        <section class="grid-container">
+            <figure class="item r-span2">
+                <img src="./images/4-gallery/img1.avif" alt="">
+            </figure>
+            <figure class="item c-span2">
+                <img src="./images/4-gallery/img4.jpg" alt="">
+            </figure>
+            <figure class="item r-span2">
+                <img src="https://images.unsplash.com/photo-1586348943529-beaae6c28db9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=415&q=80"
+                    alt="">
+            </figure>
+            <figure class="item">
+                <img src="https://images.unsplash.com/photo-1510784722466-f2aa9c52fff6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                    alt="">
+            </figure>
+            <figure class="item">
+                <img src="./images/4-gallery/img2.avif" alt="">
+            </figure>
+            <figure class="item ">
+                <img src="https://images.unsplash.com/photo-1455218873509-8097305ee378?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                    alt="">
+            </figure>
+            <figure class="item c-span2">
+                <img src="./images/4-gallery/img3.avif" alt="">
+            </figure>
+            <figure class="item r-span2">
+                <img src="https://images.unsplash.com/photo-1470770903676-69b98201ea1c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                    alt="">
+            </figure>
+        </section>
+    </main>
+
+    <!-- !!!!!!!!==========!!!!!!!!
+        Footer
+    !!!!!!!!==========!!!!!!!!! -->
+    <footer class="bg-dark py-5" id="footer">
+        <div class="container">
+            <div class="row text-white g-4">
+                <div class="col-md-6 col-lg-3 py-4">
+                    <a href="index.html" class="text-uppercase text-decoration-none brand text-white"><img
+                            src="./images/logo/ftr-logo.png" class="pb-4"></a>
+                    <p class="text-white text-muted mt-3 pb-4">Guys like us we had it made. Those were the days. The
+                        mate was a mighty sailin' man the skipper brave and sure. Five passengers.</p>
+                    <div class="ftr-icons">
+                        <ul class="d-flex list-unstyled">
+                            <li class="me-3">
+                                <a href="#" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                            </li>
+                            <li class="me-3">
+                                <a href="#" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                            <li class="me-3">
+                                <a href="#" title="Linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                            </li>
+                            <li class="me-3">
+                                <a href="#" title="Tumblr"><i class="fa-brands fa-tumblr"></i></a>
+                            </li>
+                            <li class="me-3">
+                                <a href="#" title="Vimeo"><i class="fa-brands fa-vimeo"></i></a>
+                            </li>
+                            <li class="me-3">
+                                <a href="#" title="Pinterest"><i class="fa-brands fa-pinterest"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 py-4 ps-lg-5 ps-md-4 ps-0">
+                    <ul class="">
+                        <li class="mb-3">
+                            <a href="#" class="text-white text-decoration-none text-muted">About Us</a>
+                        </li>
+                        <li class="my-3">
+                            <a href="#" class="text-white text-decoration-none text-muted">Services</a>
+                        </li>
+                        <li class="my-3">
+                            <a href="#" class="text-white text-decoration-none text-muted">Destinations</a>
+                        </li>
+                        <li class="my-3">
+                            <a href="#" class="text-white text-decoration-none text-muted">Our Gallery</a>
+                        </li>
+                        <li class="my-3">
+                            <a href="#" class="text-white text-decoration-none text-muted">Our Visitors</a>
+                        </li>
+                        <li class="my-3">
+                            <a href="#" class="text-white text-decoration-none text-muted">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6 col-lg-3 py-4">
+                    <div class="d-flex justify-content-start align-items-start mb-4 pb-2 text-muted ftr-line">
+                        <span class="me-3">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </span>
+                        <span class="fw-light pb-3">
+                            Albert Street, New York, AS 756
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start my-4 pb-2 text-muted ftr-line">
+                        <span class="me-3">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                        <span class="fw-light pb-3">
+                            attire.support@gmail.com
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start my-4 text-muted">
+                        <span class="me-3">
+                            <i class="fas fa-phone-alt"></i>
+                        </span>
+                        <span class="fw-light">
+                            000 1111 999 888
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 py-4 ps-lg-4 ps-md-5 ps-0">
+                    <h5 class="fw-bold mb-3">Recent Visiting</h5>
+                    <div class="ftr-recent-img">
+                        <img src="./images/footer/ftr-rcnt-1.jpg" class="img-fluid">
+                        <img src="./images/footer/ftr-rcnt-2.jpg" class="img-fluid">
+                        <img src="./images/footer/ftr-rcnt-3.jpg" class="img-fluid">
+                        <img src="./images/footer/ftr-rcnt-4.jpg" class="img-fluid">
+                        <img src="./images/footer/ftr-rcnt-5.jpg" class="img-fluid">
+                        <img src="./images/footer/ftr-rcnt-6.jpg" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ARR -->
+    <section class="arr bg-dark w-100 text-white">
+        <div class="container w-100 p-4">
+            <p class="mb-0 text-center text-muted">UMD &copy; 2022. All Rights Reserved</p>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- !!!!!!!!==========!!!!!!!!
+        Bootstrap JS
+    !!!!!!!!==========!!!!!!!!! -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- !!!!!!!!==========!!!!!!!!
+        Types JS
+    !!!!!!!!==========!!!!!!!!! -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- !!!!!!!!==========!!!!!!!!
+        Counter JS
+    !!!!!!!!==========!!!!!!!!! -->
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+    <script src="./script files/countMe/countMe.min.js"></script>
+    <!-- !!!!!!!!==========!!!!!!!!
+        Custom JS
+    !!!!!!!!==========!!!!!!!!! -->
+    <script src="./script.js"></script>
+    <!-- Kursor Master -->
+<script src="Kursor-master/dist/kursor.js"></script>
+<script>
+    var kursorx = new kursor({
+        type: 1,
+        color: 'rgba(200,100,0)',
+    })
+    function mouseenter() {
+        kursorx.hidden()
+    }
+    function mouseleave() {
+        kursorx.hidden(false)
+    }
+    var kursor2 = new kursor({
+        el: '.caja',
+        color: 'rgba(0,0,255)',
+        type: 4,
+    })
+</script>
+
+</body>
+
+</html>

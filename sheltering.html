@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- !!!!!!!!==========!!!!!!!!
+        Custom CSS
+    !!!!!!!!==========!!!!!!!!! -->
+    <link rel="stylesheet" href="style.css">
+    <!-- !!!!!!!!==========!!!!!!!!
+        Bootstrap CSS
+    !!!!!!!!==========!!!!!!!!! -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- !!!!!!!!==========!!!!!!!!
+        FontAwesome
+    !!!!!!!!==========!!!!!!!!! -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <!-- Kursor Link -->
+    <link rel="stylesheet" href="Kursor-master/dist/kursor.css">
+    <title>E-Project</title>
+</head>
+
+<body>
+    <!-- !!!!!!!!==========!!!!!!!!
+        Navbar
+    !!!!!!!!==========!!!!!!!!! -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white w-100 position-sticky">
+        <div class="container">
+            <a class="navbar-brand pt-0 d-lg-none" href="#"><img src="./images/logo/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" href="#offcanvasExample">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="service.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item logo d-none d-md-none d-lg-block fw-bold">
+                        <a class="nav-link fs-3" href="index.html"><img src="./images/logo/logo.png"></a>
+                    </li>
+                    <li class="nav-item drop">
+                        <a class="nav-link nav-active" href="destination.html">Destination</a>
+                        <ul class="drop-menu">
+                            <li><a href="hazards.html">Hazards</a></li>
+                            <li><a href="sheltering.html">Sheltering</a></li>
+                            <li><a href="techniques.html">Techniques</a></li>
+                            <li><a href="history.html">History</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item drop">
+                        <a class="nav-link" href="shop.html">Pages</a>
+                        <ul class="drop-menu">
+                            <li><a href="shop.html">Shop</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Offcanvas -->
+        <div class="offcanvas offcanvas-start" id="offcanvasExample">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel"><a class="navbar-brand pt-0" href="#"><img src="./images/logo/logo.png"></a></h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="dropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item p-2">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link" href="service.html">Services</a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item logo d-none d-md-none d-lg-block fw-bold">
+                            <a class="nav-link fs-3" href="index.html"><img src="./images/logo/logo.png"></a>
+                        </li>
+                        <li class="nav-item drop p-2">
+                            <a class="nav-link dropdown-toggle nav-active" id="dropdownMenuButton"
+                            data-bs-toggle="dropdown" href="destination.html">Destination</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="hazards.html">Hazards</a></li>
+                                <li><a class="dropdown-item" href="sheltering.html">Sheltering</a></li>
+                                <li><a class="dropdown-item" href="techniques.html">Techniques</a></li>
+                                <li><a class="dropdown-item" href="history.html">History</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link" href="shop.html">Pages</a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- !!!!!!!!==========!!!!!!!!
+        Shelter-Header
+    !!!!!!!!==========!!!!!!!!! -->
+    <section class="contact-head">
+        <div class="contact-img shelter-img d-flex justify-content-center align-items-center">
+            <h1>Sheltering</h1>
+        </div>
+    </section>
+
+    <!-- !!!!!!!!==========!!!!!!!!
+        Different-Types of Sheltering
+    !!!!!!!!==========!!!!!!!!! -->
+    <section id="feature" class="w-100 py-5 my-3">
+        <div class="main-heading w-100 d-flex justify-content-center align-items-center flex-column">
+            <h2 class="mb-4">Different Types Of Shelterings</h2>
+            <img src="./images/icons/heading-img.png" class="mb-2">
+            <h6 class="fw-bold">Be Happy</h6>
+        </div>
+        <div class="container my-5">
+            <div class="row risks justify-content-center align-items-center my-5">
+                <div class="col-lg-6 col-md-12 col-12">
+                    <img src="./images/5b-shelter/shelter1.webp" class="img-fluid w-100">
+                </div>
+                <div class="col-lg-6 col-md-12 col-12 pt-3">
+                    <h2>Base Camp</h2>
+                    <p class="text-muted">Base camps are most frequently used by mountain climbers who are trying to reach the summit of very high mountains. These shelters are often stocked with necessary supplies and provide climbers with a safe location for acclimatizing to extreme altitudes. When climbs to the summit take multiple days, several base camps may be located along the trails. Some of the most well-known base camps are located on Mount Everest.</p>
+                    <div class="mt-5">
+                        <a href="#" class="text-decoration-none btn1 d-inline-block">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row risks justify-content-center align-items-center my-5">
+                <div class="col-lg-6 col-md-12 col-12">
+                    <img src="./images/5b-shelter/shelter2.webp" class="img-fluid w-100">
+                </div>
+                <div class="col-lg-6 col-md-12 col-12 py-3">
+                    <h2>Hut</h2>
+                    <p class="text-muted">Huts may be well-developed or rustic shelters, located in rural areas at differing elevations along a mountain. These shelters are designed around a shared dining area with private sleeping sleeping quarters. These sleeping rooms are stocked with a bed, pillows, and blankets. Climbers bring a sleeping bag. Like base camp, huts allow a trail to be divided into several days worth of hikes and make it possible for climbers to travel with a reduced pack. During warmer seasons, many huts have full-time staff or volunteers that manage the daily activities necessary to keep the shelter running. In some locations, climbers have the option to purchase snacks, meals, and drinks.</p>
+                    <div class="mt-5">
+                        <a href="#" class="text-decoration-none btn1">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row risks justify-content-center align-items-center my-5">
+                <div class="col-lg-6 col-md-12 col-12">
+                    <img src="./images/5b-shelter/shelter3.webp" class="img-fluid w-100">
+                </div>
+                <div class="col-lg-6 col-md-12 col-12 pt-3">
+                    <h2>Tent</h2>
+                    <p class="text-muted">Tents consist of a pole framework, covered in a tarp or some other material and held by ropes and anchors. These shelters are set up at the moment it will be used and are easily portable. Simpler designs require just a thin tarp, while more durable designs incorporate heavier materials that can hold up against dangerous weather conditions. In extreme weather, tents may be set up behind mounds of snow or rock, which act as windbreaks and help protect the shelter. Tents are the most frequently used type of shelter.</p>
+                    <div class="mt-5">
+                        <a href="#" class="text-decoration-none btn1">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row risks justify-content-center align-items-center my-5">
+                <div class="col-lg-6 col-md-12 col-12">
+                    <img src="./images/5b-shelter/shelter4.webp" class="img-fluid w-100">
+                </div>
+                <div class="col-lg-6 col-md-12 col-12 pt-3">
+                    <h2>Snow Cave</h2>
+                    <p class="text-muted">Snow caves are preferred over tents by some climbers, where weather conditions permit. These shelters are known to be warmer than tents and have only 2 requirements: snow and a snow shovel. Climbers can build a snow cave in a short amount of time, digging out an area under at least 4 feet of snow. The inner temperature is usually around 32° fahrenheit and for added warmth, climbers use waterproof, lightweight bivvy bags and foam sleeping pads. Another type of snow cave is an igloo, although this requires a very specific construction technique and should only be attempted by those with experience.</p>
+                    <div class="mt-5">
+                        <a href="#" class="text-decoration-none btn1">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row risks justify-content-center align-items-center my-5">
+                <div class="col-lg-6 col-md-12 col-12">
+                    <img src="./images/5b-shelter/shelter5.webp" class="img-fluid w-100">
+                </div>
+                <div class="col-lg-6 col-md-12 col-12 pt-3">
+                    <h2>Bivouac</h2>
+                    <p class="text-muted">A bivouac, also known as a bivvy, is a very rudimentary type of shelter. It does not offer a completely enclosed shelter and in some cases, may involve simply sleeping in the open. When in the open, climbers use a sleeping bag and cover it with a bivouac sack (or bivvy bag). A bivouac sack is a lightweight, waterproof liner that provides an additional layer of protection against inclement weather and cold temperatures. Climbers may also set up a bivouac between a crack in nearby rocks or a ditch formed in the snow, both of these offer more shelter. This shelter is often chosen because it allows climbers to carry a reduced-weight pack. A bivouac does have the added risk of climbers being more exposed to dangerous weather.</p>
+                    <div class="mt-5">
+                        <a href="#" class="text-decoration-none btn1">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="button text-center pt-5">
+                <button class="btn6">Read More</button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- !!!!!!!!==========!!!!!!!!
+        Footer
+    !!!!!!!!==========!!!!!!!!! -->
+    <footer class="bg-dark py-5" id="footer">
+        <div class="container">
+            <div class="row text-white g-4">
+                <div class="col-md-6 col-lg-4 py-3">
+                    <h5 class="text-uppercase text-decoration-none text-white py-2">About Us</h5>
+                    <p class="text-white text-muted py-4 px-1">Guys like us we had it made. Those were the days. The mate was a mighty sailin' man the skipper brave and sure. Five passengers.</p>
+                    <a href="#" class="text-decoration-none text-white">Read More</a>
+                </div>
+
+                <div class="col-md-6 col-lg-4 py-3 visit-hours">
+                    <h5 class="text-uppercase text-decoration-none text-white py-2">visiting hours</h5>
+                    <p class="py-4 text-muted">Monday to Friday : <span class="fw-lighter">(9:00 am - 5:30 pm)</span></p>
+                    <p class="pb-4 text-muted">Saturday and Sunday : <span class="fw-lighter">(11:00 am - 2:30 pm)</span></p>
+                    <div class="ftr-icons">
+                        <ul class="d-flex list-unstyled">
+                            <li class="me-3">
+                                <a href="#" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                            </li>
+                            <li class="me-3">
+                                <a href="#" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                            <li class="me-3">
+                                <a href="#" title="Linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                            </li>
+                            <li class="me-3">
+                                <a href="#" title="Tumblr"><i class="fa-brands fa-tumblr"></i></a>
+                            </li>
+                            <li class="me-3">
+                                <a href="#" title="Vimeo"><i class="fa-brands fa-vimeo"></i></a>
+                            </li>
+                            <li class="me-3">
+                                <a href="#" title="Pinterest"><i class="fa-brands fa-pinterest"></i></a>
+                            </li>
+                        </ul>
+                    </div>                    
+                </div>
+
+                <div class="col-md-6 col-lg-4 py-3 tweets">
+                    <h5 class="text-uppercase text-decoration-none text-white py-2">Latest Tweets</h5>
+                    <div class="d-flex py-4">
+                        <a href="#" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                        <p class="text-white text-muted ps-4">Guys like us we had it made. Those were the days. The mate was a mighty sailin' man the skipper brave and sure. Five passengers.</p>
+                    </div>
+                    <a href="#" class="ps-5 text-white fw-bold">@umdesigner698</a>
+                </div>
+
+                <div class="col-12 py-4 pb-3">
+                    <h5 class="fw-bold mb-3">Recent Visiting</h5>
+                    <div class="ftr-recent-img">
+                        <img src="./images/footer/ftr-rcnt-1.jpg" class="img-fluid">
+                        <img src="./images/footer/ftr-rcnt-2.jpg" class="img-fluid">
+                        <img src="./images/footer/ftr-rcnt-3.jpg" class="img-fluid">
+                        <img src="./images/footer/ftr-rcnt-4.jpg" class="img-fluid">
+                        <img src="./images/footer/ftr-rcnt-5.jpg" class="img-fluid">
+                        <img src="./images/footer/ftr-rcnt-6.jpg" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ARR -->
+    <section class="arr bg-dark w-100 text-white">
+        <div class="container w-100 p-4">
+            <p class="mb-0 text-center text-muted">UMD &copy; 2022. All Rights Reserved</p>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- !!!!!!!!==========!!!!!!!!
+        Bootstrap JS
+    !!!!!!!!==========!!!!!!!!! -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- !!!!!!!!==========!!!!!!!!
+        Custom JS
+    !!!!!!!!==========!!!!!!!!! -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- !!!!!!!!==========!!!!!!!!
+        Custom JS
+    !!!!!!!!==========!!!!!!!!! -->
+    <script src="./script.js"></script>
+    <!-- Kursor Master -->
+<script src="Kursor-master/dist/kursor.js"></script>
+<script>
+    var kursorx = new kursor({
+        type: 1,
+        color: 'rgba(200,100,0)',
+    })
+    function mouseenter() {
+        kursorx.hidden()
+    }
+    function mouseleave() {
+        kursorx.hidden(false)
+    }
+    var kursor2 = new kursor({
+        el: '.caja',
+        color: 'rgba(0,0,255)',
+        type: 4,
+    })
+</script>
+
+</body>
+
+</html>

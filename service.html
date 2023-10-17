@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/logo/title-icon.png">
+    <!-- !!!!!!!!==========!!!!!!!!
+        Custom CSS
+    !!!!!!!!==========!!!!!!!!! -->
+    <link rel="stylesheet" href="style.css">
+    <!-- !!!!!!!!==========!!!!!!!!
+        Bootstrap CSS
+    !!!!!!!!==========!!!!!!!!! -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- !!!!!!!!==========!!!!!!!!
+        FontAwesome
+    !!!!!!!!==========!!!!!!!!! -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <!-- Kursor Link -->
+    <link rel="stylesheet" href="Kursor-master/dist/kursor.css">
+    <title>E-Project</title>
+</head>
+
+<body>
+    <!-- !!!!!!!!==========!!!!!!!!
+        Navbar
+    !!!!!!!!==========!!!!!!!!! -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white w-100 position-sticky">
+        <div class="container">
+            <a class="navbar-brand pt-0 d-lg-none" href="#"><img src="./images/logo/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" href="#offcanvasExample">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-active" href="service.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item logo d-none d-md-none d-lg-block fw-bold">
+                        <a class="nav-link fs-3" href="index.html"><img src="./images/logo/logo.png"></a>
+                    </li>
+                    <li class="nav-item drop">
+                        <a class="nav-link" href="destination.html">Destination</a>
+                        <ul class="drop-menu">
+                            <li><a href="hazards.html">Hazards</a></li>
+                            <li><a href="sheltering.html">Sheltering</a></li>
+                            <li><a href="techniques.html">Techniques</a></li>
+                            <li><a href="history.html">History</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item drop">
+                        <a class="nav-link" href="shop.html">Pages</a>
+                        <ul class="drop-menu">
+                            <li><a href="shop.html">Shop</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Offcanvas -->
+        <div class="offcanvas offcanvas-start" id="offcanvasExample">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel"><a class="navbar-brand pt-0" href="#"><img src="./images/logo/logo.png"></a></h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="dropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item p-2">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link nav-active" href="service.html">Services</a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item logo d-none d-md-none d-lg-block fw-bold">
+                            <a class="nav-link fs-3" href="index.html"><img src="./images/logo/logo.png"></a>
+                        </li>
+                        <li class="nav-item drop p-2">
+                            <a class="nav-link dropdown-toggle" id="dropdownMenuButton"
+                            data-bs-toggle="dropdown" href="destination.html">Destination</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="hazards.html">Hazards</a></li>
+                                <li><a class="dropdown-item" href="sheltering.html">Sheltering</a></li>
+                                <li><a class="dropdown-item" href="techniques.html">Techniques</a></li>
+                                <li><a class="dropdown-item" href="history.html">History</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link" href="shop.html">Pages</a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- !!!!!!!!==========!!!!!!!!
+        Service-Header
+    !!!!!!!!==========!!!!!!!!! -->
+    <section class="contact-head">
+        <div class="contact-img services-img d-flex justify-content-center align-items-center">
+            <h1>Service</h1>
+        </div>
+    </section>
+
+    <!-- !!!!!!!!==========!!!!!!!!
+        Adventure Section
+    !!!!!!!!==========!!!!!!!!! -->
+        <section id="adventure" class="pt-5 mt-3">
+            <div class="main-heading w-100 d-flex justify-content-center align-items-center flex-column mb-5">
+                <h2 class="mb-4">Which Adventure You Needs</h2>
+                <img src="./images/icons/heading-img.png" class="mb-2">
+                <h6 class="fw-bold">OUR SERVICES</h6>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12 detail-box d-flex justify-content-center align-items-center flex-column p-3 mb-5">
+                        <div class="cont-icon-box mb-4">
+                            <img src="images/1-index/feature-img/1bulb-icon.svg" class="img1">
+                            <img src="./images/1-index/feature-img/1bulb-icon2.svg" class="img2">
+                        </div>
+                        <h4 class="mb-1 fs-5">FAMILY</h4>
+                        <p class="text-muted p-3 text-center">So lets make the most of this beautiful day. Since we're together! The Love Boat soon everyone.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 detail-box d-flex justify-content-center align-items-center flex-column p-3 mb-5">
+                        <div class="cont-icon-box mb-4">
+                            <img src="images/1-index/feature-img/2briefcase-icon.svg" class="img1">
+                            <img src="./images/1-index/feature-img/2briefcase-icon2.svg" class="img2">
+                        </div>
+                        <h4 class="mb-1 fs-5">SINGLE</h4>
+                        <p class="text-muted p-3 text-center">Goodbye gray sky hello blue. There's nothing can hold me when I hold you. Feels so right it cant be wrong.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 detail-box d-flex justify-content-center align-items-center flex-column p-3 mb-5">
+                        <div class="cont-icon-box mb-4">
+                            <img src="images/1-index/feature-img/3couple-icon.svg" class="img1">
+                            <img src="./images/1-index/feature-img/3couple-icon3.svg" class="img2">
+                        </div>
+                        <h4 class="mb-1 fs-5">COUPLE</h4>
+                        <p class="text-muted p-3 text-center">Skipper too will do their very best to make the others comfortable in their tropic island of just one drum.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 detail-box d-flex justify-content-center align-items-center flex-column p-3 mb-5">
+                        <div class="cont-icon-box mb-4">
+                            <img src="images/1-index/feature-img/4chart-icon.svg" class="img1">
+                            <img src="./images/1-index/feature-img/4chart-icon4.svg" class="img2">
+                        </div>
+                        <h4 class="mb-1 fs-5">LOW PRICE</h4>
+                        <p class="text-muted p-3 text-center">So get a witch's shawl on a broomstick you can crawl on. Were gonna pay a call on the Addams Family.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 detail-box d-flex justify-content-center align-items-center flex-column p-3 mb-5">
+                        <div class="cont-icon-box mb-4">
+                            <img src="images/1-index/feature-img/5coffee-icon.svg" class="img1">
+                            <img src="./images/1-index/feature-img/5coffee-icon5.svg" class="img2">
+                        </div>
+                        <h4 class="mb-1 fs-5">MORE PLACES</h4>
+                        <p class="text-muted p-3 text-center">Till the one day when the lady met this fellow and they knew it was much more than a hunch.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 detail-box d-flex justify-content-center align-items-center flex-column p-3 mb-5">
+                        <div class="cont-icon-box mb-4">
+                            <img src="images/1-index/feature-img/6moto-icon.svg" class="img1">
+                            <img src="./images/1-index/feature-img/6moto-icon6.svg" class="img2">
+                        </div>
+                        <h4 class="mb-1 fs-5">DISCOUNTS</h4>
+                        <p class="text-muted p-3 text-center">So lets make the most of this beautiful day. Since we're together! The Love Boat soon everyone.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- !!!!!!!!==========!!!!!!!!
+        Destinations Section
+    !!!!!!!!==========!!!!!!!!! -->
+    <section id="destination" class="w-100 py-5 mt-4">
+        <div class="main-heading w-100 d-flex justify-content-center align-items-center flex-column mb-5">
+            <h2 class="mb-4">Attractive Travel Plans</h2>
+            <img src="./images/icons/heading-img.png" class="mb-2">
+            <h6 class="fw-bold">OUR DESTINATIONS</h6>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="box">
+                        <img src="./images/1-index/destination/destination-1.jpg" alt="">
+                        <h2 class="pak">Pakistan</h2>
+                        <div class="box-content">
+                            <h3 class="h1">Nepal Travel <br> With Me
+                            </h3>
+                            <div class="line mb-3"></div>
+    
+                            <h3>Duration: <span>6 Months</span> </h3>
+                            <h3>$1999 <sub>$2500</sub> </h3>
+                            <h5>Per Person</h5>
+                            <div class="icons">
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+    
+                            </div>
+                            <div class="conatiner-fluid">
+                                <div class="row">
+                                    <ul class="flex">
+                                        <li><a href="#"><i class="fa fa-plane f"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-bus s"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-male t"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-ship f"></i></a></li>
+                                    </ul>
+                                </div>
+    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="box">
+                        <img src="./images/1-index/destination/destination-2.jpg" alt="">
+                        <h2 class="pak">Thiland</h2>
+                        <div class="box-content">
+                            <h3 class="head-1">Nepal Travel <br> With Me</h3>
+                            <div class="line mb-3"></div>
+                            <h3>Duration: <span>6 Months</span> </h3>
+                            <h3>$1999 <sub>$2500</sub> </h3>
+                            <h5>Per Person</h5>
+                            <div class="icons">
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+    
+                            </div>
+                            <div class="conatiner-fluid">
+                                <div class="row">
+                                    <ul class="flex">
+                                        <li><a href="#"><i class="fa fa-plane f"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-bus s"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-male t"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-ship f"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="box">
+                        <img src="./images/1-index/destination/destination-3.jpg" alt="">
+                        <h2 class="pak">Nepal</h2>
+                        <div class="box-content">
+                            <h3>Nepal Travel <br> With Me</h3>
+                            <div class="line mb-3"></div>
+                            <h3>Duration: <span>6 Months</span> </h3>
+                            <h3>$1999 <sub>$2500</sub> </h3>
+                            <h5>Per Person</h5>
+                            <div class="icons">
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+    
+                            </div>
+                            <div class="conatiner-fluid">
+                                <div class="row">
+                                    <ul class="flex">
+                                        <li><a href="#"><i class="fa fa-plane f"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-bus s"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-male t"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-ship f"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="box">
+                        <img src="./images/1-index/destination/destination-4.jpg" alt="">
+                        <h2 class="pak">Barcelona</h2>
+                        <div class="box-content">
+                            <h3>Nepal Travel <br> With Me</h3>
+                            <div class="line mb-3"></div>
+                            <h3>Duration: <span>6 Months</span> </h3>
+                            <h3>$1999 <sub>$2500</sub> </h3>
+                            <h5>Per Person</h5>
+                            <div class="icons">
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+    
+                            </div>
+                            <div class="conatiner-fluid">
+                                <div class="row">
+                                    <ul class="flex">
+                                        <li><a href="#"><i class="fa fa-plane f"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-bus s"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-male t"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-ship f"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="box">
+                        <img src="./images/1-index/destination/destination-5.jpg" alt="">
+                        <h2 class="pak">Greek Land</h2>
+                        <div class="box-content">
+                            <h3>Nepal Travel <br> With Me</h3>
+                            <div class="line mb-3"></div>
+                            <h3>Duration: <span>6 Months</span> </h3>
+                            <h3>$1999 <sub>$2500</sub> </h3>
+                            <h5>Per Person</h5>
+                            <div class="icons">
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+    
+                            </div>
+                            <div class="conatiner-fluid">
+                                <div class="row">
+                                    <ul class="flex">
+                                        <li><a href="#"><i class="fa fa-plane f"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-bus s"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-male t"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-ship f"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="box">
+                        <img src="./images/1-index/destination/destination-6.jpg" alt="">
+                        <h2 class="pak">Sydney</h2>
+                        <div class="box-content">
+                            <h3>Nepal Travel <br> With Me</h3>
+                            <div class="line mb-3"></div>
+                            <h3>Duration: <span>6 Months</span> </h3>
+                            <h3>$1999 <sub>$2500</sub> </h3>
+                            <h5>Per Person</h5>
+                            <div class="icons">
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+    
+                            </div>
+                            <div class="conatiner-fluid">
+                                <div class="row">
+                                    <ul class="flex">
+                                        <li><a href="#"><i class="fa fa-plane f"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-bus s"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-male t"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-ship f"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-5 text-center pt-5">
+                <a href="destination.html" class="text-decoration-none btn1">Show More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- !!!!!!!!==========!!!!!!!!
+        Visited-Places Section
+    !!!!!!!!==========!!!!!!!!! -->
+    <section id="visited-places" class="w-100 py-5 my-3">
+        <div class="main-heading w-100 d-flex justify-content-center align-items-center flex-column">
+            <h2 class="mb-4">Most Visited Places</h2>
+            <img src="./images/icons/heading-img.png" class="mb-2">
+            <h6 class="fw-bold">TOUR LIST</h6>
+        </div>
+        <div class="container my-4 py-3 w-100">
+            <div class="row gx-0 justify-content-center align-items-center w-100">
+                <div class="col-lg-6 col-md-6 col-12 row gx-0 my-3 justify-content-center">
+                    <div class="col-lg-5 col-md-11 col-12 tour-img">
+                        <img src="./images/1-index/visited-places/tour-list1.jpg" class="w-100 px-0">
+                    </div>
+                    <div class="col-lg-7 col-md-11 col-12 text-center p-3 visit-details bg-light">
+                        <h4 class="list-heading pb-4">Europe Travel <br><span>With Me</span></h4>
+                        <div class="row py-2 border-bottom gx-0">
+                            <div class="col border-end">
+                                <i class="fa fa-plane"></i>
+                                <small>25 Times</small>
+                            </div>
+                            <div class="col">
+                                <i class="fa fa-compass"></i>
+                                <small>46 activities</small>
+                            </div>
+                        </div>
+                        <div class="text-start py-4 border-bottom">
+                            <p class="tour-text">That this group would somehow form a family that's the way we all became the Brady Bunch.</p>
+                            <a href="#">MORE DETAILS</a>
+                        </div>
+                        <div class="text-start py-4">
+                            <p class="mb-0 fs-5">From</p>
+                            <p class="mb-0 fw-bold text-warning fs-5">$1898</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-12 row gx-0 my-3 justify-content-center">
+                    <div class="col-lg-5 col-md-11 col-12 tour-img">
+                        <img src="./images/1-index/visited-places/tour-list2.jpg" class="w-100 px-0">
+                    </div>
+                    <div class="col-lg-7 col-md-11 col-12 text-center p-3 visit-details bg-light">
+                        <h4 class="list-heading pb-4">Greek Islan <br><span>With My Team</span></h4>
+                        <div class="row py-2 border-bottom gx-0">
+                            <div class="col border-end">
+                                <i class="fa fa-plane"></i>
+                                <small>12 Times</small>
+                            </div>
+                            <div class="col">
+                                <i class="fa fa-compass"></i>
+                                <small>28 activities</small>
+                            </div>
+                        </div>
+                        <div class="text-start py-4 border-bottom">
+                            <p class="tour-text">That this group would somehow form a family that's the way we all became the Brady Bunch.</p>
+                            <a href="#">MORE DETAILS</a>
+                        </div>
+                        <div class="text-start py-4">
+                            <p class="mb-0 fs-5">From</p>
+                            <p class="mb-0 fw-bold text-warning fs-5">$2759</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-12 row gx-0 my-3 justify-content-center">
+                    <div class="col-lg-5 col-md-11 col-12 tour-img">
+                        <img src="./images/1-index/visited-places/tour-list3.jpg" class="w-100 px-0">
+                    </div>
+                    <div class="col-lg-7 col-md-11 col-12 text-center p-3 visit-details bg-light">
+                        <h4 class="list-heading pb-4">Lisbon <br><span>With Me</span></h4>
+                        <div class="row py-2 border-bottom gx-0">
+                            <div class="col border-end">
+                                <i class="fa fa-plane"></i>
+                                <small>24 Times</small>
+                            </div>
+                            <div class="col">
+                                <i class="fa fa-compass"></i>
+                                <small>27 activities</small>
+                            </div>
+                        </div>
+                        <div class="text-start py-4 border-bottom">
+                            <p class="tour-text">That this group would somehow form a family that's the way we all became the Brady Bunch.</p>
+                            <a href="#">MORE DETAILS</a>
+                        </div>
+                        <div class="text-start py-4">
+                            <p class="mb-0 fs-5">From</p>
+                            <p class="mb-0 fw-bold text-warning fs-5">$2899</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-12 row gx-0 my-3 justify-content-center">
+                    <div class="col-lg-5 col-md-11 col-12 tour-img">
+                        <img src="./images/1-index/visited-places/tour-list4.jpg" class="w-100 px-0">
+                    </div>
+                    <div class="col-lg-7 col-md-11 col-12 text-center p-3 visit-details bg-light">
+                        <h4 class="list-heading pb-4">Barcelona <br><span>With My Team</span></h4>
+                        <div class="row py-2 border-bottom gx-0">
+                            <div class="col border-end">
+                                <i class="fa fa-plane"></i>
+                                <small>13 Times</small>
+                            </div>
+                            <div class="col">
+                                <i class="fa fa-compass"></i>
+                                <small>23 activities</small>
+                            </div>
+                        </div>
+                        <div class="text-start py-4 border-bottom">
+                            <p class="tour-text">That this group would somehow form a family that's the way we all became the Brady Bunch.</p>
+                            <a href="#">MORE DETAILS</a>
+                        </div>
+                        <div class="text-start py-4">
+                            <p class="mb-0 fs-5">From</p>
+                            <p class="mb-0 fw-bold text-warning fs-5">$1989</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mt-5 text-center">
+                <a href="#" class="text-decoration-none btn1">Show More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- !!!!!!!!==========!!!!!!!!
+        NewsLetter Section
+    !!!!!!!!==========!!!!!!!!! -->
+    <section id="newsletter" class="w-100 pt-5 mt-3 text-center">
+        <div class="main-heading news-heading w-100 d-flex justify-content-center align-items-center flex-column">
+            <h2 class="mb-4">Get New Updates</h2>
+            <img src="./images/icons/heading-img2.png" class="mb-2">
+            <h6 class="fw-bold text-white">NEWSLETTER</h6>
+        </div>
+        <div class="">
+            <p class="my-5 text-white news-heading"><em>Till the one day when the lady met this fellow So join us here each week
+                    my friends you're sure to get a smile And you know where you were then.</em></p>
+            <div class="input-group w-50">
+                <input type="text" class="form-control form-control-lg" placeholder="Enter Email Address">
+                <button type="button" class="btn btn-dark">SUBSCRIBE</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- !!!!!!!!==========!!!!!!!!
+        Footer
+    !!!!!!!!==========!!!!!!!!! -->
+    <footer class="bg-dark py-5" id="footer">
+        <div class="container">
+            <div class="row text-white g-4">
+                <div class="col-md-6 col-lg-3 py-4">
+                    <a href="index.html" class="text-uppercase text-decoration-none brand text-white"><img
+                            src="./images/logo/ftr-logo.png" class="pb-4"></a>
+                    <p class="text-white text-muted mt-3 pb-4">Guys like us we had it made. Those were the days. The
+                        mate was a mighty sailin' man the skipper brave and sure. Five passengers.</p>
+                    <div class="ftr-icons">
+                        <ul class="d-flex list-unstyled">
+                            <li class="me-3">
+                                <a href="#" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                            </li>
+                            <li class="me-3">
+                                <a href="#" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                            <li class="me-3">
+                                <a href="#" title="Linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                            </li>
+                            <li class="me-3">
+                                <a href="#" title="Tumblr"><i class="fa-brands fa-tumblr"></i></a>
+                            </li>
+                            <li class="me-3">
+                                <a href="#" title="Vimeo"><i class="fa-brands fa-vimeo"></i></a>
+                            </li>
+                            <li class="me-3">
+                                <a href="#" title="Pinterest"><i class="fa-brands fa-pinterest"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 py-4 ps-lg-5 ps-md-4 ps-0">
+                    <ul class="">
+                        <li class="mb-3">
+                            <a href="#" class="text-white text-decoration-none text-muted">About Us</a>
+                        </li>
+                        <li class="my-3">
+                            <a href="#" class="text-white text-decoration-none text-muted">Services</a>
+                        </li>
+                        <li class="my-3">
+                            <a href="#" class="text-white text-decoration-none text-muted">Destinations</a>
+                        </li>
+                        <li class="my-3">
+                            <a href="#" class="text-white text-decoration-none text-muted">Our Gallery</a>
+                        </li>
+                        <li class="my-3">
+                            <a href="#" class="text-white text-decoration-none text-muted">Our Visitors</a>
+                        </li>
+                        <li class="my-3">
+                            <a href="#" class="text-white text-decoration-none text-muted">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6 col-lg-3 py-4">
+                    <div class="d-flex justify-content-start align-items-start mb-4 pb-2 text-muted ftr-line">
+                        <span class="me-3">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </span>
+                        <span class="fw-light pb-3">
+                            Albert Street, New York, AS 756
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start my-4 pb-2 text-muted ftr-line">
+                        <span class="me-3">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                        <span class="fw-light pb-3">
+                            attire.support@gmail.com
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start my-4 text-muted">
+                        <span class="me-3">
+                            <i class="fas fa-phone-alt"></i>
+                        </span>
+                        <span class="fw-light">
+                            000 1111 999 888
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 py-4 ps-lg-4 ps-md-5 ps-0">
+                    <h5 class="fw-bold mb-3">Recent Visiting</h5>
+                    <div class="ftr-recent-img">
+                        <img src="./images/footer/ftr-rcnt-1.jpg" class="img-fluid">
+                        <img src="./images/footer/ftr-rcnt-2.jpg" class="img-fluid">
+                        <img src="./images/footer/ftr-rcnt-3.jpg" class="img-fluid">
+                        <img src="./images/footer/ftr-rcnt-4.jpg" class="img-fluid">
+                        <img src="./images/footer/ftr-rcnt-5.jpg" class="img-fluid">
+                        <img src="./images/footer/ftr-rcnt-6.jpg" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ARR -->
+    <section class="arr bg-dark w-100 text-white">
+        <div class="container w-100 p-4">
+            <p class="mb-0 text-center text-muted">UMD &copy; 2022. All Rights Reserved</p>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- !!!!!!!!==========!!!!!!!!
+        Bootstrap JS
+    !!!!!!!!==========!!!!!!!!! -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- !!!!!!!!==========!!!!!!!!
+        Types JS
+    !!!!!!!!==========!!!!!!!!! -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- !!!!!!!!==========!!!!!!!!
+        Counter JS
+    !!!!!!!!==========!!!!!!!!! -->
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+    <script src="./script files/countMe/countMe.min.js"></script>
+    <!-- !!!!!!!!==========!!!!!!!!
+        Custom JS
+    !!!!!!!!==========!!!!!!!!! -->
+    <script src="./script.js"></script>
+    <!-- Kursor Master -->
+<script src="Kursor-master/dist/kursor.js"></script>
+<script>
+    var kursorx = new kursor({
+        type: 1,
+        color: 'rgba(200,100,0)',
+    })
+    function mouseenter() {
+        kursorx.hidden()
+    }
+    function mouseleave() {
+        kursorx.hidden(false)
+    }
+    var kursor2 = new kursor({
+        el: '.caja',
+        color: 'rgba(0,0,255)',
+        type: 4,
+    })
+</script>
+
+</body>
+
+</html>
